@@ -67,7 +67,7 @@ export function Home() {
           </div>
         )}
 
-        {result && <ResultCard result={result} />}
+        {result && <ResultCard result={result} confianca={confianca}/>}
       </div>
     </div>
   );
