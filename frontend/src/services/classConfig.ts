@@ -1,19 +1,19 @@
-export const CLASS_CONFIG: Record<number, {
+export const CLASS_CONFIG: Record<string, {
   label: string;
   modifier: string;
   message: string;
 }> = {
-  0: {
+  '/NaoAcidente': {
     label: 'Sem acidente',
     modifier: 'result-card--safe',
     message: '✅ Fluxo normal.',
   },
-  1: {
+  '/Moderado': {
     label: 'Acidente de trânsito moderado',
     modifier: 'result-card--moderado',
     message: '⚠️ Autoridades de trânsito notificadas.',
   },
-  2: {
+  '/Grave': {
     label: 'Acidente de trânsito grave',
     modifier: 'result-card--grave',
     message: '⚠️ Serviços de emergência notificados.',
